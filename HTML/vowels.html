@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>vowel checker</title>
+</head>
+
+<body>
+<h2>vowel checker</h2>
+<label for="inputString">enter a string</label>
+<input type="text" id="inputString">
+<button onclick="checkVowels()">check</button>
+<p id="result"></p>
+
+<script>
+function checkVowels(){
+var str=document.getElementById("inputString").value;
+str=str.toLowerCase();
+var vowel=['a','e','i','o','u'];
+var vowelCount=0;
+for(var i=0;i<str.length;i++)
+{
+if(vowel.includes(str.charAt(i))){
+vowelCount++;
+}
+}
+document.getElementById("result").innerText="no of vowels"+vowelCount;
+}
+</script>
+</body>
+</html>

@@ -1,25 +1,30 @@
 <html>
 <head>
-<script type="text/javascript">
-function findprime()
-{
-document.write("prime numbers are");
-for(var i=2;i<=num;i++)
-{
-var f=0;
-for(var j=2;j<=i-1;j++)
-{
- if(i%j==0)
-{
-f=1;
-}
-}
-if(f==0)
-document.write(i+"      ");
-}
-}
-var num=prompt("Enter the limit");
-findprime(num);
-</script>
+   <title>prime number checker</title>
 </head>
+</body>
+    <h2>Prime Number Checker</h2>
+    <label for="inputNumber">enter a number</label>
+    <input type="number" id="inputNumber">
+    <button onclick="checkPrime()">check</button>
+    <p id="result"></p>
+
+
+<script>
+  function checkPrime() {
+    var number=parseInt(document.getElementById("inputNumber").value);
+    if(number<2){
+      document.getElementById("result").innerText = number+"is not a prime number";
+      return;
+    }
+    for(let i=2;i<=number/2;i++){
+     if(number%i===0){
+      document.getElementById("result").innerText=number+"is not a prime number";
+      return;
+}
+}
+document.getElementById("result").innerText=number+"is a prime number";
+}
+</script>
+</body>
 </html>

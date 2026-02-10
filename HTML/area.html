@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>area calculator</title>
+</head>
+<body>
+<h2>area calculator</h2>
+
+<label for="radius">Radius of circle</label>
+<input type="number" id="radius"><br><br>
+
+<label for="side">side of square</label>
+<input type="number" id="side"><br><br>
+
+
+<label for="lenght">lenght of rectangle</label>
+<input type="number" id="lenght"><br><br>
+
+<label for="breadth">breadth of the rectangle</label>
+<input type="number" id="breadth"><br><br>
+
+
+<button onclick="calculateArea()">calculate</button><br><br> 
+<p id="result_circle"></p>
+<p id="result_square"></p>
+<p id="result_rect"></p>
+
+<script>
+function calculateArea() {
+
+var radius=parseFloat(document.getElementById("radius").value);
+var side=parseFloat(document.getElementById("side").value);
+var lenght=parseFloat(document.getElementById("lenght").value);
+var breadth=parseFloat(document.getElementById("breadth").value);
+
+var circleArea=Math.PI*radius*radius;
+var squareArea=side*side;
+var rectangleArea=lenght*breadth;
+
+document.getElementById("result_circle").innerHTML="area of circle="+circleArea.toFixed(2);
+document.getElementById("result_square").innerHTML="area of square="+squareArea.toFixed(2);
+document.getElementById("result_rect").innerHTML="area of rectangle="+rectangleArea.toFixed(2);
+}
+
+</script>
+</body>
+</html>
+
