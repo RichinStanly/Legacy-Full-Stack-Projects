@@ -1,0 +1,25 @@
+SYSTEM REQUIREMENTS
+===================
+
+1. Server Environment
+   - XAMPP / WAMP / LAMP Stack
+   - Apache Web Server
+
+2. Language & Backend
+   - PHP Version: 7.4 or higher
+   - Required Extensions: php-mysql, pdo_mysql
+
+3. Database
+   - MySQL 5.7 or MariaDB 10.4+
+
+4. Frontend
+   - Modern Web Browser (Chrome, Edge, Firefox, Safari)
+   - JavaScript enabled
+
+INSTALLATION STEPS
+==================
+1. Install XAMPP/WAMP.
+2. Place the project folder in 'htdocs' (XAMPP) or 'www' (WAMP).
+3. Import the SQL database file into phpMyAdmin.
+4. Configure 'db.php' with your database credentials.
+5. Access via 'localhost/your-folder-name'.
