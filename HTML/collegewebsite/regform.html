@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>registration form</title>
+<style>
+*{
+    font-family:'courier new',courier,monospace;
+   }
+nav a{
+          font-size:22px;
+          text-decoration:none;
+        }
+nav{
+       background-color:#f1f1f1;
+       text-align:center;
+       padding:18px;
+    }
+nav a:hover{
+                  color:white;
+                }
+footer{
+        text-align:center;
+        padding:10px;
+        background-color:#f1f1f1;
+      }
+h4{
+     color:darked;
+   }
+h3{
+    text-align:center;
+    color:darkblue;
+    }
+p{
+    text-align:justify:
+   }
+</style>
+</head>
+<body>
+<b><h1><font color="red"><center>BVM HOLY CROSS COLLEGE</center></font></h1><b>
+<nav>
+<a href="home.html">home</a>&nbsp;|&nbsp;
+<a href="dept.html">departments</a>&nbsp;|&nbsp;
+<a href="regform.html">register</a>&nbsp;|&nbsp;
+<a href="contact.html">contact us</a>
+</nav>
+<form action="registration php" method="post">
+<center>
+<feildset style="width:50%;">
+<legend align="left"><center>REGISTRATION FORM<center></legend><br>
+<label>full name:
+<input type="text" name="first_name" required>
+</label>
+<br>
+<br>
+<label>email:
+<input type="text" name="email" required>
+</label>
+<br>
+<br>
+<label>phone:
+<input type="text" name="phone" required>
+</label>
+<br>
+<br>
+<label>address:
+<textarea name="address" name="address" cols="30" row="3"> </textarea>
+</label>
+<br>
+<br>
+<label>password:
+<input type="password" name="pwd" required>
+</label>
+<br>
+<br>
+<input type="submit" name="submit" value="submit"/>
+</feildset>
+</center>
+</form>
+</body>
+</html>
