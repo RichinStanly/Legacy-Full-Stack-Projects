@@ -1,0 +1,31 @@
+<html>
+<body>
+<from action="pageinsert.php"method=POST">
+<input type="text" id="id1" name="cid"><br>
+<input type="text" id="name" name="cname"><br>
+<input type="text" id="amt" name="camount"><br>
+<input type="submit" value="insert">
+</form>
+</body>
+</html>
+<?php
+$con=mysql_connect("localhost","root","");
+mysql-select-db("bank");
+if(!$con)
+{
+die("no connection".mysql-error());
+}
+?>
+<?php
+require(connectionbd.php");
+$id1=$_POST["cid"];
+$n1=$_POST["cname"];
+$m1=$_POST["camount"];
+$query="insert into customer values($id1,'$n1',$m1)";
+$result=mysql_query($query);
+if($result)
+{
+echo"data inserted";
+}
+echo"error in data insertion";
+?>

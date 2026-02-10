@@ -1,0 +1,32 @@
+<html>
+<head>
+<script type="text/javascript">
+function validate()
+{
+if(document.getElementByld("demo").value=="")
+{
+window.alert("Empty field!");
+}
+else
+{
+window.alert(document.getElementByld("demo").value);
+}
+}
+function check()
+{
+var x=confirm(Do you want to continue?");
+if(x==true)
+document.write("User clicked 'ok' button.");
+else
+document.write("User clicked 'cancel' button.");
+}
+var x=prompt("Enter your name","eg:sri")
+document.write("welcome"+x+"<br>");
+</script>
+</head>
+<body>
+Address:<input type="text"id="demo"/>
+<input type="button" onClick="validate()"value="save"/>
+<input type="button"onClick="check()"value="submit"/><br>
+</body>
+</html>

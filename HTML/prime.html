@@ -1,0 +1,25 @@
+<html>
+<head>
+<script type="text/javascript">
+function findprime()
+{
+document.write("prime numbers are");
+for(var i=2;i<=num;i++)
+{
+var f=0;
+for(var j=2;j<=i-1;j++)
+{
+ if(i%j==0)
+{
+f=1;
+}
+}
+if(f==0)
+document.write(i+"      ");
+}
+}
+var num=prompt("Enter the limit");
+findprime(num);
+</script>
+</head>
+</html>

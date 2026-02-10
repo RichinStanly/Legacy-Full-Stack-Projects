@@ -1,0 +1,24 @@
+<html>
+<head>
+<script>
+function validateemail()
+{
+  var x=document.myform.email.value;
+  var atposition=x.indexOf("@");
+  var dotposition=x.lastIndexOf(".");
+  if(atposition<1|| dotposition<atposition+2||dotposition+2>=x.length){alert("please enter a valid e-mail address");
+  return false;
+  }
+  else
+  {
+  alert("valid email address");
+  } 
+}
+</script></head>
+<body>
+<form name="myform" method="post" action="valid.html"onsubmit="return validateemail();">
+Email:<input type ="text" name="email"><br/>
+<input type ="submit" value="register">
+</form>
+</body>
+</html>
